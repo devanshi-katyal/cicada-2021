@@ -1,5 +1,5 @@
 # Cicada-2021
-# Miraki
+# Meraki
 A One Stop Destination For All Expected Mothers-To-Be with all their Queries Answered and Assistance Provided at just One click
 
 # Tech Stacks:
