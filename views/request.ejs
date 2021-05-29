@@ -1,8 +1,30 @@
-<%- include("partials/header"); -%> <% posts.forEach(function(post){ %>
-<h1><%=post.title%></h1>
-<p>
-  <%=post.content.substring(0, 100) + " ..."%>
-  <a href="/posts/<%=post._id%>">Read More</a>
-</p>
+<%- include("partials/header"); -%>
+<div class="bgofrequest">
+  <h1
+    style="
+      font-family: 'Yeseva One', cursive;
+      margin-left: 27%;
+      color: #ff5a6e;
+      font-size: 45px;
+    "
+  >
+    Requirements for Donation
+  </h1>
+  <div class="row container-fluid">
+    <% posts.forEach(function(post){ %>
+    <div class="col-6">
+      <div class="cardo">
+        <h1 class="post-title"><%=post.title%></h1>
 
-<% }) %> <%- include("partials/footer"); -%>
+        <div class="card-body">
+          <p class="post-text">
+            <%=post.content + " ..."%>
+            <a href="/posts/<%=post._id%>">Read More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</div>
+<%- include("partials/footer"); -%>

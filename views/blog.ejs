@@ -1,106 +1,180 @@
-<%- include("partials/header"); -%>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-<div class="row mt-5">
-        
-        <div class="col">
-            <div class="card">
-                <br>
-                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2015%2F07%2F12223020%2F550_shutterstock_222995818.jpg&q=85" alt="" style="width:500x;height:340px;">
-                <div class="card-body card-color">
-                    <h5 class="card-title">
-                        <a href="https://www.parents.com/pregnancy/my-body/pregnancy-health/healthy-pregnancy-tips/">23 Tips for a Healthy Pregnancy</a>
-                    </h5>
-                  
-                    
-                    <p class="card-text">
-                        Follow these simple pregnancy tips on safety and nutrition to stay healthy throughout the nine months before your baby arrives. […]
-                    </p>
-                </div>
-            </div>
-        </div>
+  <title>Blog</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
 
-        <div class="col">
-            <div class="card">
-                <img src="https://femina.wwmindia.com/content/2020/jul/thdiet1596018441.jpg" alt="" style="width:420px;height:360px; margin-top: 0%;">
-                <div class="card-body card-color1">
-                    <h5 class="card-title">
-                        <a href="https://www.maxhealthcare.in/blogs/obstetrics-and-gynaecology/indian-diet-plan-pregnancy">Indian diet plan in pregnancy</a>
-                    </h5>
-                    
-                  
-                    <p class="card-text c1">
-                        By Max Team
-<br>
-                        Nov 07 , 2020 | 1 min read                     
-                        <br>
-                        To make sure that what you eat helps your body and also helps you stay interested,[…]
-                    </p>
-                </div>
-            </div>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/blog.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+   <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <p class="navbar-brand">
+            <a class="nav-link" href="/">
+              <img src="https://i.ibb.co/cv6PPGx/1.png" class="nav-image"
+            /></a>
+          </p>
         </div>
-        
-        <div class="col">
-            <div class="card">
-                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2005%2F10%2F12234112%2Fszefei.jpg" alt=""style="width:420px;height:360px;">
-                <div class="card-body card-color2">
-                    <h5 class="card-title">
-                        <a href="https://www.parents.com/pregnancy/my-life/emotions/10-daily-mom-to-be-meditations/">Meditation Techniques for Pregnancy and Labor</a>
-                    </h5>
-                    
-                    </p>
-                    <p class="card-text c2">The journey of pregnancy can be a long and difficult one. These 10 meditation techniques will help keep you going.
-                        
-[…]
-                    </p>
-                </div>
+        <ul class="nav navbar-default navbar-right">
+          <li id="quiz" class="nav-item">
+            <a class="nav-link" href="/quiz">QUIZZES</a>
+          </li>
+          <li id="compose" class="nav-item">
+            <a class="nav-link" href="/Blog"> BLOG</a>
+          </li>
+          <li id="compose" class="nav-item">
+            <a class="nav-link" href="/gethospital"> NEARBY HOSPITAL</a>
+          </li>
+          <li id="compose" class="nav-item">
+            <a class="nav-link" href="/compose">ADD REQUEST</a>
+          </li>
+          <li id="showrequest">
+            <a class="nav-link" href="/requests">VIEW REQUEST</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</head>
+
+<body>
+    <div class="heading2">
+        <h1 style="
+      font-family: 'Yeseva One', cursive;"> Self Help Articles</h1>
+     
+        <h5 style="padding: 4% 5% 5%; text-align: center; color: rgb(63, 63, 63);">Whether you are a first-time parent-to-be or a parenting expert, pregnancy often throws up a million and one questions that we depend on online pregnancy resources to answer. Pregnancy blogs cover anything and everything from weekly development guides to personal birth stories, so how do you know which ones are worth reading? We have trawled through hundreds of blogs to give you our six pregnancy blog must-reads</h5>
+    </div>
+
+    <section class="articles">
+    <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2015%2F07%2F12223020%2F550_shutterstock_222995818.jpg&q=85" alt="..." width="300">
+          </div>
+          <div class="col-md-8 column">
+            <div class="card-body">
+              <h5 class="card-title">23 Tips for a Healthy Pregnancy</h5>
+              <p class="card-text">
+                Follow these simple pregnancy tips on safety and nutrition to stay healthy throughout the nine months before your baby arrives.
+                  <ol>
+                      <li>Take a Prenatal Vitamin</li>
+                      <li>Light and regular exercise</li>
+                      <li>Write a Birth Plan</li>
+                      <li>Educate Yourself about Childbirth</li>
+                      <li>Practice Kegels</li>
+                      <li>Eliminate Toxins</li>
+                      <li>Change up Chores</li>
+                      <li>Check your Medications</li>
+                      <li>Track Your Weight Gain</li>
+                      <li>Drink More Water</li>
+                      <li>Eat Folate-Rich Foods</li>
+                  </ol>     
+              </p>
+              <p class="card-text"><small class="text-muted"><a href="https://www.parents.com/pregnancy/my-body/pregnancy-health/healthy-pregnancy-tips/">Read More...</a></small></p>
             </div>
+          </div>
         </div>
     </div>
-  
-    <div class="outer"> 
-           
-                <img  src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2017%2F12%2F12220156%2Fshutterstock_389911081.jpg"   alt="">
-            <h1 class="tag1">Pregnancy Do’s and Don’ts: Health and Exercise</h1>
-            <p class="text"> 
+    </section>
 
-                <h2><b>Pregnancy Exercise</b></h2>
-                Exercise is not only safe during most pregnancies, but it also may ease many pregnancy discomforts and possibly shorten your labor and delivery and recovery time.
-                <br>
-                <br>
-                <h3><em>The Do’s of Pregnancy Exercise</h3></em>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col column tips">
+          <div class="card h-100 ">
+            <div class="card-body">
+              <h5 class="card-title">Do's ✔</h5>
+              <p class="card-text">
                 <ul>
-                <li>Exercise moderately for at least 30 minutes on most days, the American College of Obstetricians and Gynecologists recommends
-                Stick with low-impact exercises such as walking, yoga, and swimming.</li>
-                
-                <li>Stay cool and drink plenty of water. Dehydration can lead to overheating, which is dangerous for the fetus. Drink before, during, and after exercise.</li>
-                
-                <li>Wear workout clothes that don’t constrict your rib cage as you breathe.</li>
-                
-                <li>Stretch before and after exercise. Prenatal yoga is a great way to stay flexible and strong.</li>
-                
-                <li>Build your strength. Focus on your back, shoulders, pectorals (chest), and biceps so they’ll keep you strong enough to pick up and hold your baby as often as he needs you to.</li>
-                
-                <li>Do Kegel exercises daily to help prevent urinary incontinence. They’re simple: Repeatedly contract and relax your pelvic floor muscles as though you’re stopping and starting the flow of urine.</li>
-                <br>
-                 <a href="https://www.parents.com/pregnancy/my-body/fitness/is-it-safe-to-exercise-during-pregnancy/">RELATED:<u>Is It Safe to Exercise During Pregnancy?</u></a>
-                <br><br>
-                <h3><em>The Don'ts of Pregnancy Exercise</h3></em>
-                <li>Don’t work out to the point of exhaustion. Make sure you can still carry on a conversation while you’re exercising.</li>
-                <li>Don’t keep exercising if you feel dizzy or lightheaded.
-                
-                <li>Don’t get overheated. Avoid working out in hot environments; consider early-morning or evening walks or go to an air-conditioned gym.</li>
-                
-                <li>Don’t lift heavy weights, lie on your stomach or back, or use machines that require wearing a belt around your waist.</li>
-                
-                <li>Don’t tackle high-impact sports or activities in which you risk falling or injuring your abdomen, such as in-line skating, soccer, downhill skiing, and horseback riding.</li>
-                
-                <li>Don’t exercise if you experience any of the following: an incompetent cervix; pregnancy with multiple risk factors for premature labor; persistent second- or third- trimester bleeding; placenta previa past 26 weeks; premature labor; ruptured membranes; preeclampsia</li>
-                </ul>    
-</div>
-<br>
-
-  
+                    <li>Drink plenty of water during exercise.</li>
+                    <li>Exercise moderately for 30 minutes.</li>
+                    <li>Do take a multivitamin.</li>
+                    <li>Do get lots of sleep.</li>
+                    <li>Do eat seafood.</li>
+                    <li>Do have sex.</li>
+                    <li>Do practice yoga.</li>
+                    <li>Do get a flu shot.</li>
+                    <li>Do gain weight smartly.</li>
+                    <li>Do visit your dentist.</li>
+                </ul> 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col column tips">
+          <div class="card h-100 ">
+            <div class="card-body">
+              <h5 class="card-title">Don't's ❌</h5>
+              <p class="card-text">
+                <ul>
+                    <li>Don’t get overheated while exercising.</li>
+                    <li>Don’t keep exercising if you feel dizzy.</li>
+                    <li>Don’t smoke.</li>
+                    <li>Don’t drink alcohol.</li>
+                    <li>Don’t eat deli meat.</li>
+                    <li>Don’t eat raw meat.</li>
+                    <li>Don’t eat unpasteurized milk products.</li>
+                    <li>Don’t sit in a hot tub or sauna.</li>
+                    <li>Don’t drink a lot of caffeine.</li>
+                    <li>Don’t clean the cat’s litter box.</li>
+                </ul> 
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
     
-</div>
+    <section class="articles">
+    <div class="row">
+        <div class="col-md-4 column">
+          <div class="card h-100 ">
+            <img src="https://femina.wwmindia.com/content/2020/jul/thdiet1596018441.jpg" alt />
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.maxhealthcare.in/blogs/obstetrics-and-gynaecology/indian-diet-plan-pregnancy">Indian diet plan in pregnancy</a>
+              </h4>
+              <p class="card-text">
+                To make sure that what you eat helps your body and also helps you stay interested, spread out your food through the day by...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 column">
+          <div class="card h-100 ">
+            <img src="https://img.freepik.com/free-photo/pregnancy-yoga-meditation-class_1163-1725.jpg?size=626&ext=jpg" alt />
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.parents.com/pregnancy/my-life/emotions/10-daily-mom-to-be-meditations/">Meditation Techniques for Pregnancy and Labor</a>
+              </h4>
+              <p class="card-text">
+                The journey of pregnancy can be a long and difficult one. These 10 meditation techniques will help keep you going...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 column">
+          <div class="card h-100 ">
+            <img src="https://www.verywellfamily.com/thmb/zHfRL-oXdRVkAsifGbJyU_A8IFU=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-159627153web-56fbebb05f9b5829868d7c92.jpg" alt />
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teen-pregnancy/art-20048124">Teenage pregnancy: Helping your teen cope</a>
+              </h4>
+              <p class="card-text">
+                Teenage pregnancy can have a profound impact on a teen's life. Help your child understand the options, health risks and challenges ahead...
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
 
-<%- include("partials/footer"); -%>
+<script src="js/scripts.js" type="text/JavaScript"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

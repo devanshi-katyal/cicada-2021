@@ -9,47 +9,52 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img
+        style="height: 500px"
         class="d-block w-100"
         src="https://www.hopkinsmedicine.org/-/media/images/health/3_-wellness/fertility-pregnancy-and-childbirth/high-risk-pregnancy-hero.ashx?h=500&la=en&mh=500&mw=1300&w=1297&hash=AAD1E8A04940C9FE4865C0FFE3F8D61487BBA22F"
         alt="First slide"
       />
       <div class="carousel-caption d-none d-md-block">
-        <h5>My Caption Title (1st Image)</h5>
+        <h5>Insights for your nine months journey</h5>
+        <br />
+
         <p>
-          The whole caption will only show up if the screen is at least medium
-          size.
+          <a class="carbtn btn-lg" href="/blog">Head over to Blog NOW</a>
         </p>
-        <p><a class="btn btn-lg btn-primary" href="#">Register</a></p>
+        <br />
+        <br />
       </div>
     </div>
     <div class="carousel-item">
       <img
+        style="height: 500px"
         class="d-block w-100"
         src="https://media.front.xoedge.com/images/e162d0c6-3367-4a5d-b49b-bc2d0911e6f0"
         alt="Second slide"
       />
       <div class="carousel-caption d-none d-md-block">
-        <h5>My Caption Title (1st Image)</h5>
-        <p>
-          The whole caption will only show up if the screen is at least medium
-          size.
-        </p>
-        <p><a class="btn btn-lg btn-primary" href="#">Take Quiz</a></p>
+        <h5>Take your first Quiz NOW</h5>
+        <br />
+        <p><a class="carbtn btn-lg" href="/quiz">Take Quiz</a></p>
+        <br />
+        <br />
       </div>
     </div>
     <div class="carousel-item">
       <img
+        style="height: 500px"
         class="d-block w-100"
         src="https://www.brookhavendentalgroup.com/wp-content/uploads/elementor/thumbs/Top-Tips-To-Take-Care-Of-A-Newborn-Baby-om7qdui3mxmzwunaiuee29whkv8dwii2ek6e5pytu0.jpg"
         alt="Third slide"
       />
       <div class="carousel-caption d-none d-md-block">
-        <h5>My Caption Title (1st Image)</h5>
-        <p>
-          The whole caption will only show up if the screen is at least medium
-          size.
-        </p>
-        <p><a class="btn btn-lg btn-primary" href="#">Send Request</a></p>
+        <h5>
+          A life lost is a future lost. Save a life, Donate Breast Milk Today!
+        </h5>
+        <br />
+        <p><a class="carbtn btn-lg" href="/compose">DONATE NOW</a></p>
+        <br />
+        <br />
       </div>
     </div>
   </div>
@@ -72,57 +77,303 @@
     <span class="sr-only"></span>
   </a>
 </div>
+<style type="text/css">
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #232323;
+  }
+  section {
+    padding: 60px 0;
+  }
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    outline: none;
+    color: #232323;
+  }
 
-<!-- Team -->
-<h2>Our Team</h2>
-<div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C5103AQGlJZIWP1y9Ww/profile-displayphoto-shrink_800_800/0/1582482031865?e=1627516800&v=beta&t=N5GcnY9dWhGoG9JuVE80WJUJOG8C8eE1GRn7MvgEKi8"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h6 class="card-title">Card title</h6>
+  .site-heading h2 {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .site-heading h2 span {
+    color: #ff5a6e;
+  }
+
+  .site-heading h4 {
+    display: inline-block;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 1;
+  }
+
+  .site-heading h4::before {
+    background: #ff5a6e none repeat scroll 0 0;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+  }
+
+  .site-heading h2 span {
+    color: #ff5a6e;
+  }
+
+  .site-heading {
+    margin-bottom: 60px;
+    overflow: hidden;
+    margin-top: -5px;
+  }
+
+  .team-area .single-item {
+    margin-bottom: 30px;
+    padding: 1%;
+    max-width: 25%;
+  }
+
+  .team-area .item .thumb {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .team-area .item .thumb::after {
+    background: #232323 none repeat scroll 0 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    width: 100%;
+  }
+
+  .team-area .team-items .item:hover .thumb::after {
+    opacity: 0.7;
+  }
+
+  .team-area .item .thumb .overlay {
+    top: -100%;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .team-area .item:hover .thumb .overlay {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+  .team-area .item .thumb .overlay p {
+    color: #ffffff;
+  }
+
+  .team-area .item .thumb .overlay h4 {
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .team-area .item .thumb img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+  }
+
+  .team-area .item:hover .thumb img {
+    opacity: 0.6;
+  }
+
+  .team-area .info {
+    background: #ffffff none repeat scroll 0 0;
+    -moz-box-shadow: 0 0 10px #cccccc;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    -o-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc;
+    padding: 40px 20px 20px;
+    position: relative;
+    text-align: center;
+    z-index: 9;
+  }
+
+  .team-area .info .message {
+    height: 50px;
+    line-height: 40px;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 50px;
+  }
+
+  .team-area .info .message a {
+    background: #fff none repeat scroll 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 0 0 10px #cccccc;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    -o-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc;
+    box-sizing: border-box;
+    color: #ff5a6e;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+  }
+
+  .team-area .info .message a i {
+    font-weight: 500;
+  }
+
+  .team-area .info h4 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+
+  .team-area .info span {
+    color: #ff5a6e;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+</style>
+<section id="team" class="team-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="site-heading text-center">
+          <h2 style="font-family: 'Yeseva One', cursive">
+            Our <span>Team</span>
+          </h2>
+          <h4>Meet our awesome and expert team members</h4>
+        </div>
+      </div>
+    </div>
+    <div class="row team-items">
+      <div class="col-md-4 single-item">
+        <div class="item">
+          <div class="thumb">
+            <img
+              class="img-fluid"
+              src="https://media-exp1.licdn.com/dms/image/C5103AQGlJZIWP1y9Ww/profile-displayphoto-shrink_800_800/0/1582482031865?e=1627516800&v=beta&t=N5GcnY9dWhGoG9JuVE80WJUJOG8C8eE1GRn7MvgEKi8"
+              alt="Thumb"
+            />
+            <div class="overlay">
+              <h4>Devanshi Katyal</h4>
+              <p>An ECE Sophomore and Full Stack Web developer</p>
+            </div>
+          </div>
+          <div class="info">
+            <span class="message">
+              <a href="#"><i class="fas fa-envelope-open"></i></a>
+            </span>
+            <h4>Devanshi Katyal</h4>
+            <span>Web Designer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 single-item">
+        <div class="item">
+          <div class="thumb">
+            <img
+              class="img-fluid"
+              src="https://media-exp1.licdn.com/dms/image/C4E03AQGaspa4DaDMlA/profile-displayphoto-shrink_800_800/0/1611803988969?e=1627516800&v=beta&t=N5pfV3Dvb1H3_jhq0Pa2vDvq1cmDJKqev4NwmjaXrwc"
+              alt="Thumb"
+            />
+            <div class="overlay">
+              <h4>Khushi Gandhi</h4>
+              <p>An ECE Sophomore and Front-End Web developer</p>
+            </div>
+          </div>
+          <div class="info">
+            <span class="message">
+              <a href="#"><i class="fas fa-envelope-open"></i></a>
+            </span>
+            <h4>Khushi Gandhi</h4>
+            <span>Web Designer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 single-item">
+        <div class="item">
+          <div class="thumb">
+            <img
+              class="img-fluid"
+              src="https://media-exp1.licdn.com/dms/image/C4E03AQH5AtozD4QNBg/profile-displayphoto-shrink_800_800/0/1617048324627?e=1627516800&v=beta&t=VUbhWN3jLqLYkOhgFGK_uq3sChvMt29ogakTbySIonk"
+              alt="Thumb"
+            />
+            <div class="overlay">
+              <h4>Nikita Aggarwal</h4>
+              <p>An ECE Sophomore and Front-End Web developer</p>
+            </div>
+          </div>
+          <div class="info">
+            <span class="message">
+              <a href="#"><i class="fas fa-envelope-open"></i></a>
+            </span>
+            <h4>Nikita Aggarwal</h4>
+            <span>Web designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 single-item">
+        <div class="item">
+          <div class="thumb">
+            <img class="img-fluid"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQFVGrGJaQlgAA/profile-displayphoto-shrink_800_800/0/1591562627438?e=1627516800&v=beta&t=8yT-QGzTi5JbBPvsGH2Ey9PZ9hDsbiRCQV3xqsXMkMg""
+            alt="Thumb">
+            <div class="overlay">
+              <h4>Sunidhi Chaudhary</h4>
+              <p>An ECE Sophomore and Front-End Web developer</p>
+            </div>
+          </div>
+          <div class="info">
+            <span class="message">
+              <a href="#"><i class="fas fa-envelope-open"></i></a>
+            </span>
+            <h4>Sunidhi Chaudhary</h4>
+            <span>Web designer</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card h-100">
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C4E03AQGaspa4DaDMlA/profile-displayphoto-shrink_800_800/0/1611803988969?e=1627516800&v=beta&t=N5pfV3Dvb1H3_jhq0Pa2vDvq1cmDJKqev4NwmjaXrwc"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h6 class="card-title">Card title</h6>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C4E03AQH5AtozD4QNBg/profile-displayphoto-shrink_800_800/0/1617048324627?e=1627516800&v=beta&t=VUbhWN3jLqLYkOhgFGK_uq3sChvMt29ogakTbySIonk"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h6 class="card-title">Card title</h6>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C5603AQFVGrGJaQlgAA/profile-displayphoto-shrink_800_800/0/1591562627438?e=1627516800&v=beta&t=8yT-QGzTi5JbBPvsGH2Ey9PZ9hDsbiRCQV3xqsXMkMg"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h6 class="card-title">Card title</h6>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 <%- include("partials/footer"); -%>

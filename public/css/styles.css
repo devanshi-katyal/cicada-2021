@@ -2,39 +2,210 @@ html {
   min-height: 100%;
   position: relative;
 }
-
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
-.footer-padding {
-	padding-bottom: 60px;
+/* view all posts */
+.post-title {
+  font-size: 40px;
+  padding: 2%;
+  text-align: center;
+  color: #140000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  opacity: 100%;
+}
+.post-text {
+  color: #1a040494;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 550;
+  opacity: 100%;
+}
+.cardo {
+  border-radius: 15px;
+  padding: 2%;
+  margin: 3%;
+  background-color: rgba(243, 239, 243, 0.863);
+  box-shadow: 0 20px 20px -14px rgba(12, 12, 12, 0.87);
+  border: 1px white solid;
+}
+.bgofrequest {
+  padding: 4%;
+  background: #f8f2f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f8f2f5,
+    white
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f8f2f5,
+    white
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bgofpost {
+  padding: 4%;
+  background-image: url('https://i.pinimg.com/originals/39/2c/83/392c83e2d046bb2f2b7e3f7879f3fc6a.jpg');
+}
+.card-body {
+  opacity: 90%;
+  height: 120px;
+  background: #fae8f1;
+  font-size: large;
+  font-color: white;
 }
 
-.footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
-}
+/* single post */
 
-.footer p {
-	margin-top: 25px;
-	font-size: 12px;
+.post-title-single {
+  font-size: xx-large;
+  padding: 2%;
+  align-self: center;
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 2%;
+
+  padding: 2%;
+  text-align: center;
+}
+.postbody {
+  font-size: 40px;
+  padding: 2%;
+  text-align: center;
+  color: #141313;
+  border: 2px black solid;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-left: 11%;
+  opacity: 100% !important;
+  background-color: #fceff5a6;
+  opacity: 1;
+  width: 80%;
+  background-size: 22px 39px;
+  background-position: 0 0, 0 0, 11px 19px, 11px 19px, 0 0, 11px 19px;
+  padding: 5% 7%;
+}
+/* form  */
+main {
+  width: 100%;
+  background-image: linear-gradient(
+      115deg,
+      rgba(68, 56, 78, 0.8),
+      rgba(224, 205, 195, 0.7)
+    ),
+    url('https://image.freepik.com/free-photo/hands-holding-red-heart-health-insurance-donation-concept_49149-460.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form {
+  background: rgba(103, 80, 88, 0.7);
+  margin: 0 auto;
+  width: 40%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
+  flex-direction: column;
+  padding: 50px 0 20px 0;
+}
+#title {
+  font-size: 3rem;
+  font-family: 'Yeseva One', cursive;
+}
+#description {
+  font-style: italic;
+  padding: 5px;
+}
+#survey-form {
+  display: flex;
+
+  padding: 4%;
+  flex-direction: column;
+  color: #fff;
+  margin: 0 auto;
+  width: 50%;
+}
+.uno {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+#name,
+#number,
+#submit,
+#pincode {
+  /* width: 80%; */
+  height: 40px;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 5px;
+  padding-left: 5px;
+  background-color: rgba(245, 245, 245, 0.747);
+}
+
+#details {
+  width: 100%;
+  height: 100px;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 5px;
+  padding-left: 5px;
+  background-color: rgba(245, 245, 245, 0.747);
+}
+.submit {
+  margin: 20px;
+  align-self: center;
+  margin-left: 35%;
+  color: #fff;
+  font-weight: bold;
+  background-color: black !important;
+}
+/* home page button */
+.carbtn {
+  -webkit-border-radius: 24;
+  -moz-border-radius: 24;
+  border-radius: 24px;
+  -webkit-box-shadow: 3px 3px 3px #6b6b6b;
+  -moz-box-shadow: 3px 3px 3px #6b6b6b;
+  box-shadow: 3px 3px 3px #6b6b6b;
+  color: #fafafa;
+  font-size: 20px;
+  background: #000000;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.carbtn:hover {
+  background: #949494;
+  text-decoration: none;
+}
+/* get hospital */
+.main-map {
+  text-align: center;
+  padding: 2%;
+}
+.main-map h2 {
+  font-size: 40px;
+  color: crimson;
+}
+.map-btn {
+  margin-top: 2%;
+  margin-left: 47%;
 }

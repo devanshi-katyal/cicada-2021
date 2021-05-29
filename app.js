@@ -21,6 +21,7 @@ const postSchema = {
   content: String,
   name: String,
   mobile: String,
+  pincode: String,
 }
 
 const Post = mongoose.model('Post', postSchema)
@@ -35,6 +36,11 @@ app.get('/blog', function (req, res) {
     res.render('blog')
   })
 })
+app.get('/gethospital', function (req, res) {
+  Post.find({}, function (err, posts) {
+    res.render('gethospital')
+  })
+})
 app.get('/requests', function (req, res) {
   Post.find({}, function (err, posts) {
     res.render('request', {
@@ -47,9 +53,22 @@ app.get('/quiz', function (req, res) {
     res.render('quiz')
   })
 })
-
 app.get('/compose', function (req, res) {
   res.render('compose')
+})
+
+app.get('/pregnancyIndicator', function (req, res) {
+  res.render('pregnancyIndicator.ejs')
+})
+
+app.get('/EatSmartly', function (req, res) {
+  res.render('EatSmartly.ejs')
+})
+app.get('/healthyPregnancy', function (req, res) {
+  res.render('healthyPregnancy.ejs')
+})
+app.get('/trimester', function (req, res) {
+  res.render('trimester.ejs')
 })
 
 app.post('/compose', function (req, res) {
@@ -58,6 +77,7 @@ app.post('/compose', function (req, res) {
     content: req.body.postBody,
     name: req.body.postName,
     mobile: req.body.postMobile,
+    pincode: req.body.postpincode,
   })
 
   post.save(function (err) {
@@ -76,6 +96,7 @@ app.get('/posts/:postId', function (req, res) {
       content: post.content,
       name: post.name,
       mobile: post.mobile,
+      pincode: post.pincode,
     })
   })
 })

@@ -1,0 +1,44 @@
+<%- include("partials/header"); -%>
+<style>
+  input[type='text'] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 2%;
+    margin-left: 32%;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+</style>
+<div class="main-map">
+  <h2
+    style="
+      font-family: 'Yeseva One', cursive;
+      margin-bottom: 2%;
+      font-size: 45px;
+    "
+  >
+    Get Hospitals
+  </h2>
+
+  <h3>Please enter your City:</h3>
+
+  <input type="text" name="city" id="pin" class="sudo" />
+  <h3>Please enter your State:</h3>
+  <input type="text" name="city" id="pin" class="sudo" />
+  <button type="submit " class="uno map-btn carbtn">Submit</button>
+</div>
+
+<div class="mapouter">
+  <div style="width: 100%; margin-left: 20%">
+    <iframe
+      width="720"
+      height="600"
+      id="gmap_canvas"
+      src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=noida,%20uttar%20pradesh,%20india+()&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    ></iframe>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>

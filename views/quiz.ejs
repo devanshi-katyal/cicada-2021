@@ -1,5 +1,86 @@
-<%- include("partials/header"); -%>
+<!-- Main Navigation -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/quiz.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<h1>quiz here</h1>
+  <!-- Main content -->
+  <main>
+    <div class="content-wrapper" id="about">
+      <!-- second replaceble image -->
+      <img
+        class="img-absolute"
+        src="https://images.unsplash.com/photo-1609840533612-0cdfb9418281?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHBpbmslMjBtb3RoZXJ8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="City 2"
+      />
+      <div class="grid">
+        <div
+          class="grid-col-sm-12 grid-col-md-6 astonish"
+          data-animation="fadeInLeft"
+        >
+          <h2 style="font-family: 'Yeseva One', cursive" class="section-title">
+            <b>SELF HELP QUIZZES</b>
+          </h2>
+          <p>
+            “Oh I feel the baby, the baby!” is a line from the movie “Junior”,
+            starring Arnold Schwarzenegger playing a pregnant man. Can you
+            imagine your mom's difficulties during her maternity? Women, during
+            their pregnancy, are given maternity leaves because it isn't at all
+            easy being pregnant.
+          </p>
+          <p>
+            Do you think some of these questions are easy though? What does
+            ‘morning sickness mean? How long is a normal pregnancy? What
+            activities do pregnant women have to avoid during pregnancy? We have
+            dozens of quizzes
+          </p>
+          <p>
+            The quiz tool helps women analyse their pregnancy or even to help
+            them self-diagnose their pregnancy if testing kits for the same are
+            or not available to them.
+          </p>
+        </div>
+      </div>
+    </div>
 
-<%- include("partials/footer"); -%>
+    <div
+      id="reserve"
+      class="content-wrapper-lg text-center astonish"
+      data-animation="zoomIn"
+    >
+      <h2 class="section-title">Explore the Nine Month Journey</h2>
+      <p>
+        This app will have quizzes for mothers to take every trimester so that
+        they can be safe and ensure their baby’s safety as well. These quizzes
+        will check the general well being of the mother and the child and also
+        cover the do’s and don'ts to take care of during this time. It will also
+        alert the mother in case there is any issue.
+      </p>
+      <a href="./pregnancyIndicator" class="btn btn-outline-purple"
+        >Pregnancy Indicator Quiz</a
+      >
+      <a href="/EatSmartly" class="btn btn-outline-purple"
+        >Eating Smartly Quiz</a
+      >
+      <a href="/healthyPregnancy" class="btn btn-outline-purple"
+        >Healthy Pregnancy Quiz</a
+      >
+      <a href="/trimester" class="btn btn-outline-purple"
+        >First Trimester Quiz</a
+      >
+      <a href="/trimester" class="btn btn-outline-purple"
+        >Second Trimester Quiz</a
+      >
+      <a href="/trimester" class="btn btn-outline-purple"
+        >Third Trimester Quiz</a
+      >
+    </div>
+  </main>
+  <a href="/" class="btn"> Return To Home</a>
+</html>
