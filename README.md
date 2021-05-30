@@ -27,7 +27,7 @@ Installing For Different OS versions: https://nodejs.org/en/download/
 
 Install all the dependencies for the project using `npm install`
 
-Start the application using `npm start`
+Start the application using `node app.js`
 
 The application will be served at `localhost:3000`.
  
